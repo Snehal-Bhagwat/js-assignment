@@ -1,8 +1,118 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-  <meta charset="utf-8">
-  <title>JavaScript current day and time</title>
-  </head>
-  <body></body>
+<html lang="en">
+<body>
+
+<!--console.assert()-->
+<h1>JavaScript console.assert() Method</h1>
+
+<p>Press F12 on your keyboard to see the message in the console view.</p>
+
+<p>This example demonstrates how an object is displayed when using the console.assert method.</p>
+
+<script>
+var myObj = { firsname : "John", lastname : "Doe" };
+
+console.assert(document.getElementById("demo"), myObj);
+</script>
+
+
+
+
+
+<!--console.clear()-->
+
+<h1>JavaScript console.clear() Method</h1>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<p>Click the button to clear the console:</p>
+
+<button onclick="myFunction()">Clear Console</button>
+
+<script>
+
+console.log("Hello! Press the button to clear the console!");
+
+function myFunction() {
+  console.clear();
+}
+
+</script>
+
+
+<!--console.count()-->
+
+<h1>JavaScript console.count() Method</h1>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<script>
+
+console.count();
+console.count();
+
+</script>
+
+<p>The first call will write "default: 1", and the second will write "default: 2".</p>
+
+<p>This is because both calls have the same label.</p>
+
+
+
+<!--console.error()-->
+
+<h1>JavaScript console.error() Method</h1>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<p>This example demonstrates how an Array is displayed as an error message in the console view.</p>
+
+<script>
+var myArr = ["Orange", "Banana", "Mango", "Kiwi" ];
+console.error(myArr);
+</script>
+
+
+<!--console.group()-->
+<h1>JavaScript console.group() Method</h1>
+
+<p>End a group by using the console.groupEnd() method.</p>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<script>
+
+console.log("Hello world!");
+console.group();
+console.log("Hello again, this time inside a group!");
+console.groupEnd();
+console.log("and we are back.");
+
+</script>
+
+
+<!--console.trace()-->
+
+<h1>JavaScript console.trace() Method</h1>
+
+<p>Press F12 on your keyboard to view the result in the console view.</p>
+
+<p>By clicking the button, a function will be executed, which will execute another function, which will execute the console.trace() method, which will display this trace in the console.view.</p>
+
+<button onclick="myFunction()">Start Trace</button>
+
+<script>
+
+function myFunction() {
+  myOtherFunction();
+}
+
+function myOtherFunction() {
+  console.trace();
+}
+
+</script>
+
+
+</body>
 </html>
